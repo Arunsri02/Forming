@@ -1,3 +1,4 @@
+<!--footer-->
 <footer id="footer">
 			<!-- top footer -->
 			<div class="section">
