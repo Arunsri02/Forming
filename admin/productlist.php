@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
 include("../db.php");
 error_reporting(0);
@@ -18,8 +18,8 @@ if(file_exists($path)==true)
 }
 else
 {}
-/*this is delet query*/
-mysqli_query($con,"delete from products where product_id='$product_id'")or die("query is incorrect...");
+//this is delet query//
+mysqli_query($con,"DELETE from products where product_id='$product_id'") or die("query is incorrect...");
 }
 
 ///pagination
@@ -57,7 +57,7 @@ include "topheader.php";
                     <tbody>
                       <?php 
 
-                        $result=mysqli_query($con,"select product_id,product_image, product_title,product_price from products  where product_cat=1 or product_cat=2 or product_cat=3 or product_cat=4 Limit $page1,12")or die ("query 1 incorrect.....");
+                        $result=mysqli_query($con,"select product_id,product_image, product_title,product_price from products  where  product_cat=2 or product_cat=3 or product_cat=4 Limit $page1,12")or die ("query 1 incorrect.....");
 
                         while(list($product_id,$image,$product_name,$price)=mysqli_fetch_array($result))
                         {
@@ -65,14 +65,14 @@ include "topheader.php";
                         <td>$price</td>
                         <td>
 
-                        <a class=' btn btn-success' href='clothes_list.php?product_id=$product_id&action=delete'>Delete</a>
+                        <a class=' btn btn-success' href='productlist.php?product_id=$product_id&action=delete'>Delete</a>
                         </td></tr>";
                         }
 
                         ?>
                     </tbody>
                   </table>
-                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                <div class="ps_rail-x" style="left: 0px; bottom: 0px;"><div class="psthumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="psrail-y" style="top: 0px; right: 0px;"><div class="ps_thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
               </div>
             </div>
             <nav aria-label="Page navigation example">
