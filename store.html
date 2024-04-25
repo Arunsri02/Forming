@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NFS</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="styles/store.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="head row">
+        <nav class="col navbar navbar-expand-sm navbar-light bg-light">
+          <a class="navbar-brand" href="home.html">
+            <span>NFS</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#vegitables">Vegitables & Fruits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#grain">Grains</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oil">Oilseed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#forage">Forage Seeds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Cover">Cover Crop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Speciality">Speciality Seeds </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="head-2 col">
+          <button id="openPanelBtn" class="btn btn-outline-success ml-5">
+            <i class="fas fa-shopping-cart"> </i><span id="cartCount" class="text-dark pl-1">  0</span> 
+          </button>
+        </div>
+      </div>
+      <div id="sidePanel">
+        <button id="closePanelBtn" class="btn btn-danger">x</button>
+        <div class="cart">
+          <div class="head-cart d-flex justify-content-around">
+            <div class="num">
+              <h5>#</h5>
+            </div>
+            <div class="items">
+              <h5>items</h5>
+            </div>
+            <div class="qty">
+              <h5>Qty</h5>
+            </div>
+          </div>
+          <ol class="cart-items"></ol>
+        </div>
+		<div class="check-out ml-5">
+      <div id="cartTotal" class="float-end"></div>
+		<a class="btn btn-danger m-3 " href="checkout.html">Check out</a>
+	</div>
+      </div>
+      <div class="content m-5 row">
+        <!-- Vegitables & Fruits -->
+        <h4 id="vegitables" class=" vegitables">Vegitables & Fruits</h4>
+        <!-- item one  -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+          <img src="img/tomato.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="1">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Tomato seed</h5>
+            <p>
+              <b class="price" data-index="1">&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart tmp" data-index="1">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item two -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+          <img src="img/product2.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="2">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">Cucumber seed</h5>
+            <p class="price" data-index="2">
+              <b>&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item three -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product5.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">WaterMelon seed</h5>
+            <p class="price">
+              <b>&#8377; 179.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item four -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product6.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3"> JackFruit seed</h5>
+            <p class="price">
+              <b>&#8377; 539.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="3">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item five -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product4.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Apple seed</h5>
+            <p class="price">
+              <b>&#8377; 208.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="4">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item six -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product3.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Carrot seed</h5>
+            <p class="price">
+              <b>&#8377; 528.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="5">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- Grain Seeds -->
+        <h4 id="grain" class="grain">Grain Seeds</h4>
+        <!-- item one  -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+          <img src="img/product7.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="1">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Wheat seed</h5>
+            <p>
+              <b class="price" data-index="1">&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart tmp" data-index="1">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item two -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+          <img src="img/product8.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="2">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">Rice</h5>
+            <p class="price" data-index="2">
+              <b>&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item three -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product9.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Corn seed</h5>
+            <p class="price">
+              <b>&#8377; 179.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item four -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product10.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Barley seed</h5>
+            <p class="price">
+              <b>&#8377; 539.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="3">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item five -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product11.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Rye seed</h5>
+            <p class="price">
+              <b>&#8377; 208.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="4">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item six -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/product12.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Sorghum seed</h5>
+            <p class="price">
+              <b>&#8377; 528.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="5">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- Oil seeds -->
+        <h4 id="oil" class=" vegitables">Oil seeds</h4>
+        <!-- item one  -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+          <img src="img/oil1.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="1">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Canola seed</h5>
+            <p>
+              <b class="price" data-index="1">&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart tmp" data-index="1">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item two -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+          <img src="img/oil2.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="2">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">Hemp seed</h5>
+            <p class="price" data-index="2">
+              <b>&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item three -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/oil-3.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Castor seed</h5>
+            <p class="price">
+              <b>&#8377; 179.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item four -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/oil-4.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3"> Cotton seed</h5>
+            <p class="price">
+              <b>&#8377; 539.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="3">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item five -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/oil-5.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Sunflower seed</h5>
+            <p class="price">
+              <b>&#8377; 208.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="4">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item six -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/oil-6.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Pumpkin seed</h5>
+            <p class="price">
+              <b>&#8377; 528.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="5">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- Forage Seeds -->
+        <h4 id="forage" class=" vegitables">Forage Seeds</h4>
+        <!-- item one  -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+          <img src="img/Forage-1.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="1">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Alfalfa seed</h5>
+            <p>
+              <b class="price" data-index="1">&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart tmp" data-index="1">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item two -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+          <img src="img/Forage-2.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="2">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">Clover seed</h5>
+            <p class="price" data-index="2">
+              <b>&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item three -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/Forage-3.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Ryegrass seed</h5>
+            <p class="price">
+              <b>&#8377; 179.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item four -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/Forage-4.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3"> Timothy grass seed</h5>
+            <p class="price">
+              <b>&#8377; 539.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="3">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item five -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/Forage-5.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Orchard grass seed</h5>
+            <p class="price">
+              <b>&#8377; 208.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="4">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item six -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/Forage-6.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">vetch grassd</h5>
+            <p class="price">
+              <b>&#8377; 528.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="5">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- Cover Crop Seeds -->
+        <h4 id="Cover" class=" vegitables">Cover Crop Seeds</h4>
+        <!-- item one  -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+          <img src="img/crop1.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="1">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Winter rye seed</h5>
+            <p>
+              <b class="price" data-index="1">&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart tmp" data-index="1">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item two -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+          <img src="img/crop2.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="2">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">Crimson clover seed</h5>
+            <p class="price" data-index="2">
+              <b>&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item three -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/crop3.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Hairy vetch seed</h5>
+            <p class="price">
+              <b>&#8377; 179.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item four -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/crop4.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3"> Annual rye grass seed</h5>
+            <p class="price">
+              <b>&#8377; 539.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="3">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item five -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/crop5.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Red clover seed</h5>
+            <p class="price">
+              <b>&#8377; 208.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="4">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item six -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/crop6.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Mustard seed</h5>
+            <p class="price">
+              <b>&#8377; 528.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="5">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- Speciality Seeds -->
+        <h4 id="Speciality" class=" vegitables">Speciality Seeds</h4>
+        <!-- item one  -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+          <img src="img/special1.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="1">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Heirloom tomato seed</h5>
+            <p>
+              <b class="price" data-index="1">&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart tmp" data-index="1">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item two -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+          <img src="img/special2.jpg" class="card-img-top mb-4-img-top p-2" alt="..." data-index="2">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">Organic lettuce seed</h5>
+            <p class="price" data-index="2">
+              <b>&#8377; 859.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item three -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/special3.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Hydroponic basil seed</h5>
+            <p class="price">
+              <b>&#8377; 179.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="2">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item four -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/special4.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3"> Arugulu seed</h5>
+            <p class="price">
+              <b>&#8377; 539.05</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="3">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item five -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/special5.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Micro greens seed</h5>
+            <p class="price">
+              <b>&#8377; 208.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="4">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+        <!-- item six -->
+        <div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+          <img src="img/special6.jpg" class="card-img-top mb-4-img-top p-2" alt="...">
+          <div class="card mb-4-body p-2">
+            <h5 class="card-title mb-4-title border-0 px-3 py-3">Cilantro seed</h5>
+            <p class="price">
+              <b>&#8377; 528.57</b>
+            </p>
+            <p class="card mb-4-text border-0">Seeds are the reproductive units of plants, containing the embryo and necessary nutrients to support early growth. <button class="btn btn-outline-success mt-5 add-to-cart" data-index="5">
+                <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javaScript/store.js"></script>
+  </body>
+</html>

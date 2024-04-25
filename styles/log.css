@@ -1,0 +1,33 @@
+.body{
+  background-color: #70E000;
+}
+span{
+  color: red;
+}
+.container{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner-container{
+  padding: 40px;
+  text-wrap: nowrap;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 500px ) {
+  .inner-container {
+    width: 350px;
+    height: 400px;
+    font-size: .8rem;
+    text-wrap: wrap;
+    margin: 0px 40px;
+  }
+  .inner-container h3{
+    font-size: .9rem;
+  }
+}

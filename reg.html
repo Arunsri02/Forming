@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSF Registration Form </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="styles/reg.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <div class="container m-5">
+      <!-- First name & Last name -->
+      <form class="form" name="submit-to-google-sheet">
+        <h1 class="my-3">Register to Plant the Seeds of Success!</h1> 
+        <div class="form-row">
+          <div class="col-md-6 col-sm-10 mt-3 col-10">
+            <input type="text" class="form-control" name="firstName" placeholder="First name*" required>
+          </div>
+          <div class="col-md-6 col-sm-10 mt-3 col-10">
+            <input type="text" class="form-control" name="lastName" placeholder="Last name">
+          </div>
+        </div>
+        <!-- Mobile number & Email -->
+        <div class="form-row align-items-center">
+          <div class="col-md-5 my-1 col-sm-5 col-10 mt-3">
+            <input type="number" class="form-control" name="number" id="inlineFormInputName" placeholder="Number*" required>
+          </div>
+          <div class="col-md-7 my-1 col-sm-5 col-10 mt-3">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
+              <input type="text" class="form-control" name="email" id="inlineFormInputGroupUsername" placeholder="E-mail*" required>
+            </div>
+          </div>
+        </div>
+        <!-- Date -->
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <h6 class="mt-2">Date of Birth</h6>
+            <input type="date" class="mt-2 col-10" id="dob" name="dob">
+          </div>
+          <!-- Gender -->
+          <div class="col">
+            <h6 class="mt-2 col-6">Gender</h6>
+            <div class="form-row">
+                <div class="form-check mr-3">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check mr-3">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Address -->
+        <div class="form-row mt-4">
+          <div class="col-md-6 mt-md-3 col-sm-10 col-10">
+            <input type="text" class="form-control" name="address" placeholder="Address*" required>
+          </div>
+          <div class="col-md-3 col-sm-5 mt-sm-3 mt-3 col-5">
+            <input type="text" class="form-control" name="city" placeholder="City*" required>
+          </div>
+          <div class="col-md-3 col-sm-5 mt-sm-3 mt-3 col-5">
+            <input type="number" class="form-control" name="pinCode" placeholder="Pin Code*" required>
+          </div>
+        </div>
+        <!-- Password and confirm password -->
+        <div class="row">
+          <div class="form-group mt-3 col-sm-10 col-md-6 col-10">
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password*" required>
+          </div>
+          <div class="form-group col-md-6 mt-3 col-sm-10 mt-sm-3 col-10">
+            <input type="password" class="form-control" name="cPassword" id="exampleInputPassword2" placeholder="Confirm Password*" required>
+          </div>
+        </div>
+        <!-- Terms and condition -->
+        <div class="form-group form-check mt-2">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1">Terms & Condition</label>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" id="submit" class="btn btn-outline-primary mt-3 a">Submit</button>
+        <div id="password"></div>
+        <div id="output"></div>
+      </form>
+    </div>
+    <script src="javaScript/reg.js"></script>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFS</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   <div id="header">
+     <div class="container">
+         <!-------navbar------->
+         <nav>
+            <h1 id="logo">NFS</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Farming</a></li>
+                <li><a href="#rentals">Seeds</a></li>
+                <li><a href="store.html">Products</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <!------------Home--------------->
+          <div class="header-text">
+             <h1>Natural<br>
+                Farming and Seeds,<br> in <span>Chennai.</span><br>
+             </h1>
+             <div  class="icon-cart">
+             <button  class="chatbot-button" onclick="toggleChatbot()">
+              <a href="chat.html"><i class="fas fa-comment-alt"></i></a>
+          </button>
+      </div>
+          </div>
+       </div>
+    </div>
+      
+        <!---------About----------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Farming.jpg" alt="">
+                    </div>
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Our NFS</h1>
+                        <p>
+                                 Our company is deeply rooted in the farming industry, specializing in providing 
+                          high-quality seeds and agricultural solutions to farmers. With a commitment to 
+                          innovation and sustainability, we strive to empower farmers with the tools and knowledge
+                          they need to achieve success.<br>
+                          
+                                Our extensive selection of seeds, coupled with our expert 
+                          guidance and support, ensures that farmers can maximize their yields and cultivate thriving crops.
+                          We are dedicated to driving positive change in the farming sector, helping farmers to grow healthy, 
+                          abundant harvests year after year
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('technicians')">Farmers</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('customers')">Customers</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="technicians">
+                            <ul>
+                                <li><span>Small-Scale Farmers</span><br>These farmers typically have limited land and resources. 
+                                     We provide them with seeds and techniques suitable for small plots, focusing on high yield and sustainability.
+                                     Our training includes efficient water usage, organic farming methods, and crop rotation to maximize output</li>
+
+                                <li><span>Medium-Scale Farmers</span><br>These farmers operate larger plots but still require cost-effective solutions.
+                                     We offer them a range of hybrid seeds and modern farming equipment. Our training emphasizes modern agricultural practices,
+                                     pest and disease management, and financial planning for sustainable growth.</li>
+
+                                <li><span>Large-Scale Farmers</span><br>These farmers manage extensive agricultural operations and require high-yield solutions.
+                                     We provide them with advanced seeds, precision farming technologies, and large-scale machinery.
+                                     Our training includes farm management practices, market analysis, and advanced irrigation techniques. </li>
+
+                                <li><span>Specialized Crop growers</span><br>These farmers focus on specific crops such as fruits, vegetables, or cash crops.
+                                     We offer them specialized seeds, tailored farming techniques, and market insights for their chosen crops.
+                                     Our training includes crop-specific cultivation methods, pest and disease control, and post-harvest management techniques.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2002-current year</span><br>Small-Scale Farmer</li>
+                                <li><span>2010-curent year</span><br>Medium-Scale Farmer </li>
+                                <li><span>2015-current year</span><br>Large-Scale Farmer</li>
+                                <li><span>2020-current year</span><br>Specialized-Crop grows</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="customers">
+                            <div class="wrapper">
+                                <div class="container">
+                                    <i class="fas fa-smile-beam"></i>
+                                    <span class="num" data-val="4000">000</span>
+                                    <span class="text">Total Customer</span>
+                                </div>
+                                <div class="container">
+                                    
+                                    <i class="fas fa-eye"></i>
+                                    <span class="num" data-val="379">000</span>
+                                    <span class="text">viewers</span>
+                                </div>
+                                <div class="container">
+                                    <i class="fas fa-home"></i>
+                                    <span class="num" data-val="8252">000</span>
+                                    <span class="text">Services</span>
+                                </div>
+                                <div class="container">
+                                    
+                                    <i class="fas fa-star"></i>
+                                    <span class="num" data-val="5000"></span>
+                                    <span class="text">Five star Reviews</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="explain">
+            <h1>Services</h1>
+            <P>"We provide farmers for labor on your farming lands and offer farming training online and offline.
+                We sell a variety of high-quality seeds, categorized into six sections, each with numerous seed varieties.
+                Whatever you need, please fill out the contact form, and our employers will call you back within 10 minutes.
+                Please provide the correct address and contact number; delivery Time depends on your needs and address.
+                Cash on delivery is available. Thank you for visiting."</P>
+
+        </div>
+        <br>
+        <br>
+
+        <!----------------------Services---------------------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Farming</h1>
+                <h2>It is typically involves, Six main stages</h2>
+                
+                <div class="services-list">
+                    <div>
+                        <img src="images/Stage1.jpg" alt="">
+                       <!----<i class="fa-solid fa-bolt"></i><i class="fa-solid fa-wrench"></i>-->
+                        <h2>Planning</h2>
+                        <P>Farmers decide what crops to plant based on market demand, soil health, and weather conditions.
+                           They also plan irrigation and fertilizer schedules.</P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="images/Stage2.jpg" alt="">
+                        <h2>Preparation</h2>
+                        <P>This stage involves preparing the land by plowing, leveling, and adding nutrients to the soil.
+                             Farmers may also set up irrigation systems at this stage.</P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="images/Stage3.jpg" alt="">
+                        <h2>Planting</h2>
+                        <P>Farmers sow seeds or transplant seedlings into the prepared soil.
+                            They ensure proper spacing and depth for optimal growth.</P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="images/Stage4.jpg" alt="">
+                        <h2>cultivation</h2>
+                        <P> During this stage, farmers maintain the crop by weeding, watering, and applying fertilizers or pesticides as needed.
+                            They monitor the crop's growth and health.</P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="images/Stage5.jpg" alt="">
+                        <h2>Harvesting</h2>
+                        <P>When the crops are mature, farmers harvest them.
+                           This may involve hand-picking, using machinery, or a combination of both, depending on the crop and scale of the operation.
+
+                        </P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <img src="images/Stage6.jpg" alt="">
+                        <h2>post-harvest</h2>
+                        <P>After harvesting, farmers may process the crops further (e.g., drying, sorting, packaging) to prepare them for sale or storage.
+                           They also clean and maintain equipment for the next planting season.</P>
+                        <a href="#">Learn more</a>
+                        </div>
+                </div>
+                <br>
+                    <h3>Each stage is crucial and requires careful management to ensure a successful harvest and sustainable farming practices.</h3>
+            </div>
+        </div>
+
+        <!--------------------Rentals------------------------->
+
+        <div id="rentals">
+            <div class="container">
+                <h1 class="sub-title">Our Seeds</h1>
+                <br>
+                <h2>Each category of seeds plays a vital role in modern agriculture, contributing to the diversity and sustainability of farming practices.</h2>
+                <div class="rent-list">
+                    <div class="rent">
+                        <img src="images/Seed1.jpg" alt="">
+                        <div class="layer">
+                            <h1>Vegitables & Fruits</h1>
+                            <p>These seeds are used to grow a variety of vegetables such as tomatoes, cucumbers, and peppers.
+                            They are selected for their taste, size, and disease resistance.
+                            </p>
+                           <!---- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="rent">
+                        <img src="images/Seed2.jpg" alt="">
+                        <div class="layer">
+                            <h1>Grain Seeds</h1>
+                            <p>These seeds are used to grow grains like wheat, rice, and corn.
+                                They are chosen for their yield, quality, and resistance to pests and diseases.
+                            </p>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="rent">
+                        <img src="images/Seed3.jpg" alt="">
+                        <div class="layer">
+                            <h1>Oilseed Seeds</h1>
+                            <p>These seeds are used to produce edible oils, such as sunflower seeds, soybeans, and canola seeds.
+                                They are selected for their oil content and quality.
+                            </p>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="rent">
+                        <img src="images/Seed4.jpg" alt="">
+                        <div class="layer">
+                            <h1>Forage Seeds</h1>
+                            <p>These seeds are used to grow plants for animal feed, such as alfalfa, clover, and grasses.
+                                They are chosen for their nutritional value and ability to withstand grazing.
+                            </p>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="rent">
+                        <img src="images/Seed5.jpg" alt="">
+                        <div class="layer">
+                            <h1>Cover Crop Seeds</h1>
+                            <p>These seeds are planted to cover and protect the soil, improve soil health, and suppress weeds.
+                                Examples include legumes like clover and vetch, as well as grasses like rye and oats.
+                            </p>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="rent">
+                        <img src="images/Seed6.jpg" alt="">
+                        <div class="layer">
+                            <h1>Speciality Seeds</h1>
+                            <p>These are seeds for niche markets or specific purposes, such as organic seeds, heirloom varieties, or seeds for hydroponic farming.
+                            </p>
+                            <a href="store.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> --
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <br>
+                
+            </div>
+                <h1 id="products">See more products</h1>
+
+                <a href="store.html" class="btn">Click here</a> 
+        </div>
+        <br>
+        <br>
+            <div id="copyright">
+                <P>Copyright @ Arun. Made with <i class="fa-solid fa-heart"></i> by the website</P>
+            </div>
+        
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-----------------About tab script----------------->
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for ( tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for ( tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   </script>
+   <!--------------------In about customers count script------------------------>
+     <script>
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+        valueDisplays.forEach((valueDisplay)=>{
+            let startValue=0;
+            let endValue=parseInt(valueDisplay.getAttribute
+            ("data-val"));
+            let duration=Math.floor(interval/endValue);
+            let counter=setInterval(function (){
+                startValue +=1;
+                valueDisplay.textContent=startValue;
+                if (startValue==endValue){
+                    clearInterval(counter);
+                }
+            },duration);      
+        });
+    </script>
+
+   <!--------------------Mobile size navbar script------------------------->
+   <script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+   </script>
+     
+</body>
+</html>

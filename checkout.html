@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+    <style>
+        #output { 
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container m-5">
+        <!-- First name & Last name --><div id="output"></div>
+        <form class="form" name="submit-to-google-sheet">
+          <h1 class="my-3">Check-out Details </h1>
+          
+          <div class="form-row">
+            <div class="col-md-6 col-sm-10 mt-3 col-10">
+              <input type="text" class="form-control" name="First name" placeholder="First name*" required>
+            </div>
+            <div class="col-md-6 col-sm-10 mt-3 col-10">
+              <input type="text" class="form-control" name="Last name" placeholder="Last name*" required>
+            </div>
+          </div>
+          <!-- Mobile number & Email -->
+          <div class="form-row align-items-center">
+            <div class="col-md-5 my-1 col-sm-5 col-10 mt-3">
+              <input type="number" class="form-control" id="inlineFormInputName" name="Number" placeholder="Number*" required>
+            </div>
+            <div class="col-md-7 my-1 col-sm-5 col-10 mt-3">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername" name="E-mail" placeholder="E-mail*" required>
+              </div>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="form-row mt-4">
+            <div class="col-md-6 mt-md-3 col-sm-10 col-10">
+              <input type="text" class="form-control" name="Address" placeholder="Address*" required>
+            </div>
+            <div class="col-md-3 col-sm-5 mt-sm-3 mt-3 col-5">
+              <input type="text" class="form-control" placeholder="City*" name="City" required>
+            </div>
+            <div class="col-md-3 col-sm-5 mt-sm-3 mt-3 col-5">
+              <input type="number" class="form-control" placeholder="Pin code*" name="Pincode" required>
+            </div>
+          </div>
+           <!-- Payment method -->
+           <!-- <div class="col">
+            <h6 class="mt-2 col-6">Payment method</h6>
+            <div name="Payment method" class="form-row">
+              <div class="form-check ">
+                <input class="form-check-input ml-1" type="radio" name="COD" id="exampleRadios1" value="option1">
+                <label class="form-check-label ml-4 mr-2" for="exampleRadios1"> COD </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="CARD" id="exampleRadios2" value="option2">
+                <label class="form-check-label mr-2" for="exampleRadios2">Credit / Debit Card </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Upi" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3"> Upi </label>
+              </div>
+            </div>
+          </div> -->
+          <!-- Terms and condition -->
+          <div class="form-group form-check mt-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Terms & Condition</label>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-outline-primary mt-3">Place order</button>
+        </form>
+      </div>
+     
+      <!-------------------Form submit and get datas script----------------------->
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKwlMxgliIfjUu0KkwTfjES92v_CbDEePBaHtH_nMOACTjLD7m7j1_i5oXNRcJ5TvaVA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("output")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            console.log("Success!!")
+            msg.innerHTML="<h1>Order placed succesfully</h1>"
+                form.reset();
+            setTimeout(function(){
+                msg.innerHTML=""
+            window.location.href = "store.html"
+            },4000)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    <!-- Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
