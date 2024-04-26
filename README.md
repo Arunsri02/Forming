@@ -31,12 +31,12 @@ NFS offers a range of services, including providing farmers for labor, offering 
 
    ## Contributors
    Team rep:
-   Arunkumar
+   Arunkumar.
 
    Colabrators:
-   Rajesh
-   Ranjitha
-   Jayasri
+   Rajesh,
+   Ranjitha,
+   Jayasri.
 
 ## Azure Services
 we are used in our websites some azure services
