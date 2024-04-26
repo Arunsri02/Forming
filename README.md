@@ -39,7 +39,7 @@ NFS offers a range of services, including providing farmers for labor, offering 
    Jayasri
 
 ## Azure Services
-we are used in oue websites some azure services
+we are used in our websites some azure services
 1.Resourse group.
 2.Azure monitor.
 3.Language.
