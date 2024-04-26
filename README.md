@@ -11,7 +11,7 @@ NFS is a website dedicated to providing high-quality seeds and agricultural solu
 4. [Products](#products)
 5. [Services](#services)
 6. [Contributors](#Contributors)
-7. [Azure services](#Azure Services)
+7. [Azure services](#Azureservices)
 
 ## About
 The About section provides an overview of NFS, its commitment to the farming industry, and its dedication to driving positive change. It also outlines the different types of farmers NFS caters to and the services it offers.
