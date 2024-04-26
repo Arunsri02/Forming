@@ -456,6 +456,11 @@ nav .fa-solid{
         margin-right: 30px;
         color: #080808;
     }
+    #explain{
+        padding:10px;
+        
+
+    }
     .chatbot-button{
         right: 7px;
     }
