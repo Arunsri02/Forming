@@ -456,12 +456,7 @@ nav .fa-solid{
         margin-right: 30px;
         color: #080808;
     }
-    #explain{
-        padding:10px;
-        font-size:16px;
-        
-
-    }
+   
     #services{
         padding:10px;
 
@@ -513,12 +508,6 @@ nav .fa-solid{
         flex-basis: 100%;
     }
 
-    #explain{
-    margin: auto;
-    padding: 30px;
-    
-
-}
 #explain h1{
     font-size: 20px;
 }
