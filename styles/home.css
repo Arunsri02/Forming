@@ -512,6 +512,19 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+
+    #explain{
+    margin: auto;
+    padding: 30px;
+    
+
+}
+#explain h1{
+    font-size: 20px;
+}
+#explain p{
+    font-size: 14px;
+}
     #copyright{
         font-size: 14px;
     }
